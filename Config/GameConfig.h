@@ -5,7 +5,7 @@ __declspec(selectany) //This line to prevent "redefinition error"
 
 struct  //contains all game configurations (MAY be loaded from a configuration file later)
 {
-	int	windWidth = 1200, windHeight = 600,	//Window width and height
+	int	windWidth = 1200, windHeight = 700,	//Window width and height
 		wx = 5, wy = 5,			//Window starting coordinates
 
 		//The window is divded into 3 areas: toolbar, playing area, statusbar

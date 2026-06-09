@@ -145,6 +145,10 @@
     <ClCompile Include="Entities\Animal.cpp">
       <Filter>Entities</Filter>
     </ClCompile>
+    <ClCompile Include="Entities\Product.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="Entities\Grass.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CMUgraphicsLib\auxil.h">
@@ -228,5 +232,15 @@
     <ClInclude Include="Config\GameConfig.h">
       <Filter>Config</Filter>
     </ClInclude>
+    <ClInclude Include="Entities\Product.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="Entities\Grass.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ANIMAL_MOVEMENT_EXPLANATION.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="FEATURE_DOCUMENTATION.txt" />
   </ItemGroup>
 </Project>

@@ -166,6 +166,8 @@
     <ClCompile Include="Core\Game.cpp" />
     <ClCompile Include="Core\GameObject.cpp" />
     <ClCompile Include="Entities\Animal.cpp" />
+    <ClCompile Include="Entities\Grass.cpp" />
+    <ClCompile Include="Entities\Product.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="UI\BudgetBar.cpp" />
     <ClCompile Include="UI\Toolbar.cpp" />
@@ -196,8 +198,16 @@
     <ClInclude Include="Core\Game.h" />
     <ClInclude Include="Core\GameObject.h" />
     <ClInclude Include="Entities\Animal.h" />
+    <ClInclude Include="Entities\Grass.h" />
+    <ClInclude Include="Entities\Product.h" />
     <ClInclude Include="UI\BudgetBar.h" />
     <ClInclude Include="UI\Toolbar.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ANIMAL_MOVEMENT_EXPLANATION.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="FEATURE_DOCUMENTATION.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,0 +1,121 @@
+## WORKSPACE EXECUTIVE SUMMARY (YAML)
+# Generated: 2026-05-16T17:02:54.0088632+03:00
+# Root: C:\Users\RTX\Downloads\farmfrenzy game
+Architecture:
+  Type: General Codebase
+  Scale: 56 relevant source files
+  Components: 0
+  Controllers: 0
+  Models: 0
+  Services: 0
+---
+- File: graphics_prj.sln
+  Preview: " Microsoft Visual Studio Solution File, Format Version 12.00 # Visual Studio Version 18 VisualStudioVersion = 18.5.11723.231 MinimumVisualStudioVersio..."
+- File: ANIMAL_MOVEMENT_EXPLANATION.md
+  Preview: "# Animal Movement with Pointers - Complete Explanation ## Overview Animals in the Farm Frenzy game move using a pointer-based system where the Game cl..."
+- File: main.cpp
+  Preview: "#include './Core/Game.h'  int main() { 	//Create an object of controller 	Game game; 	game.go(); } "
+- File: Manual.txt
+  Preview: "The CMUGraphics package composed of the files CMUgraphics.h and CMUgraphics.cpp provides the following member functions, typically accessed via a glob..."
+- File: Readme.txt
+  Preview: " Documentation for the CMUgraphics package is found in Manual.txt. Release notes for Version 1.2 of the package --------------------------------------..."
+- File: savegame.txt
+  Preview: "1 2000 2100 1:23 0 0 0 1 493 164 3 1 0 2 0 3 0 0 0 0 0 0 0 "
+- File: CMUgraphicsLib\auxil.cpp
+  Preview: "/* See 'version.h' for version info and copyright information This file was last modified on 05.16.1999 */ #include <cstdlib> #include <windows.h> #in..."
+- File: CMUgraphicsLib\auxil.h
+  Preview: "/* See 'version.h' for version info and copyright information This file was last modified on 05.16.1999 */  #ifndef AUXILIARY_H #define AUXILIARY_H #i..."
+- File: CMUgraphicsLib\CMUgraphics.cpp
+  Preview: "/* See 'version.h' for version info and copyright information This file was last modified on 05.16.1999 */ #include <string> #include <iostream> #incl..."
+- File: CMUgraphicsLib\CMUgraphics.h
+  Preview: "/* See 'version.h' for version info and copyright information This file was last modified on 05.16.1999 */ #ifndef CMUGRAPHICS_H #define CMUGRAPHICS_H..."
+- File: CMUgraphicsLib\colors.cpp
+  Preview: "/* See 'version.h' for version info and copyright information This file was last modified on 05.16.1999 */ #include 'colors.h' bool operator==(color a..."
+- File: CMUgraphicsLib\colors.h
+  Preview: "/* See 'version.h' for version info and copyright information This file was last modified on 05.16.1999 */ #ifndef COLORS_H #define COLORS_H #include ..."
+- File: CMUgraphicsLib\error.h
+  Preview: "/* See 'version.h' for version info and copyright information This file was last modified on 05.16.1999 */ #ifndef ERROR_H #define ERROR_H #include 'v..."
+- File: CMUgraphicsLib\image.cpp
+  Preview: "/* See 'version.h' for version info and copyright information This file was last modified on 05.16.1999 */ #include <iostream> #include 'image.h' #inc..."
+- File: CMUgraphicsLib\image.h
+  Preview: "/* See 'version.h' for version info and copyright information This file was last modified on 05.16.1999 */ #ifndef IMAGE_H #define IMAGE_H #include <s..."
+- File: CMUgraphicsLib\jpegload.h
+  Preview: "/* See 'version.h' for version info and copyright information This file was last modified on 05.16.1999 */ #ifndef JPEGLOAD_H #define JPEGLOAD_H #incl..."
+- File: CMUgraphicsLib\keyqueue.cpp
+  Preview: "/* See 'version.h' for version info and copyright information This file was last modified on 05.16.1999 */ #include 'keyqueue.h' kqueue::kqueue() {   ..."
+- File: CMUgraphicsLib\keyqueue.h
+  Preview: "/* See 'version.h' for version info and copyright information This file was last modified on 05.16.1999 */ #ifndef KEYQUEUE_H #define KEYQUEUE_H #incl..."
+- File: CMUgraphicsLib\mousequeue.cpp
+  Preview: "/* See 'version.h' for version info and copyright information This file was last modified on 05.16.1999 */ #include 'mousequeue.h' mqueue::mqueue() { ..."
+- File: CMUgraphicsLib\mousequeue.h
+  Preview: "/* See 'version.h' for version info and copyright information This file was last modified on 05.16.1999 */ #ifndef MOUSEQUEUE_H #define MOUSEQUEUE_H #..."
+- File: CMUgraphicsLib\version.h
+  Preview: "/* CMUgraphics Library 1.2 Copyright (c) 1998 and 1999 by Geoff Washburn. All rights reserved. Portions of the code in these files may be derived from..."
+- File: CMUgraphicsLib\windowinput.cpp
+  Preview: "/* See 'version.h' for version info and copyright information This file was last modified on 05.16.1999 */ #include <iostream> #include <string> #incl..."
+- File: CMUgraphicsLib\windowinput.h
+  Preview: "/* See 'version.h' for version info and copyright information This file was last modified on 05.16.1999 */ #ifndef WINDOWINPUT_H #define WINDOWINPUT_H..."
+- File: Config\GameConfig.h
+  Preview: "#pragma once #include '../CMUgraphicsLib/CMUgraphics.h' __declspec(selectany) //This line to prevent 'redefinition error' struct //contains all game c..."
+- File: Core\Drawable.cpp
+  Preview: "#include 'Drawable.h' Drawable::Drawable(Game* r_pGame, point r_point, int r_width, int r_height) { 	pGame = r_pGame; 	RefPoint = r_point; 	width = r_..."
+- File: Core\Drawable.h
+  Preview: "#pragma once #include '../CMUgraphicsLib/CMUgraphics.h' class Game;   //forward declaration struct point { 	int x, y; };  class Drawable { protected: ..."
+- File: Core\Game.cpp
+  Preview: "#include 'Game.h' #include '../Config/GameConfig.h' #include '../Entities/Product.h' #include '../Entities/Animal.h' #include <random> #include <ctime..."
+- File: Core\Game.h
+  Preview: "#pragma once #include '../CMUgraphicsLib/CMUgraphics.h' #include '../UI/Toolbar.h' #include '../UI/BudgetBar.h' #include '../Entities/Animal.h' #inclu..."
+- File: Core\GameObject.cpp
+  Preview: "#include 'GameObject.h' GameObject::GameObject(Game* r_pGame, point ref, int r_width, int r_height, color fc, color bc) : Drawable (r_pGame, ref, r_wi..."
+- File: Core\GameObject.h
+  Preview: "#pragma once #include 'Drawable.h' class GameObject : public Drawable { protected: 	color fillColor;	//game object fill color 	color borderColor;	//ga..."
+- File: Debug\graphics_prj.vcxproj.FileListAbsolute.txt
+  Preview: "C:\Users\RTX\Downloads\farmfrenzy game\Debug\graphics_prj.exe "
+- File: Entities\Animal.cpp
+  Preview: " #include 'Animal.h' #include '../Entities/Product.h' #include '../Config/GameConfig.h' #include '../Core/Game.h' #include <iostream> #include <cstdli..."
+- File: Entities\Animal.h
+  Preview: "#pragma once #include <string> using namespace std; #include '../Core/Drawable.h' class Animal :public Drawable { protected: 	string image_path; 	poin..."
+- File: Entities\Grass.cpp
+  Preview: "#include 'Grass.h' #include '../Core/Game.h' #include <iostream> Grass::Grass(Game* r_pGame, point r_point, int r_width, int r_height, string img_path..."
+- File: Entities\Grass.h
+  Preview: "#pragma once #include '../Core/Drawable.h' using namespace std; class Grass : public Drawable { protected:   string image_path;   int foodAmount; // ا..."
+- File: Entities\Product.cpp
+  Preview: "#include 'Product.h' #include '../Core/Game.h' #include <iostream> using namespace std; Product::Product(Game* r_pGame, point r_point, int r_width, in..."
+- File: Entities\Product.h
+  Preview: "#pragma once #include '../Core/Drawable.h' #include '../CMUgraphicsLib/image.h' #include <string> class Game; enum ProductType { 	PRODUCT_EGG, 	PRODUC..."
+- File: PerformanceTests1\pch.cpp
+  Preview: "// pch.cpp: source file corresponding to the pre-compiled header #include 'pch.h' // When you are using pre-compiled headers, this source file is nece..."
+- File: PerformanceTests1\pch.h
+  Preview: "// pch.h: This is a precompiled header file. // Files listed below are compiled only once, improving build performance for future builds. // This also..."
+- File: PerformanceTests1\PerformanceTests1.cpp
+  Preview: "#include 'pch.h' #include 'CppUnitTest.h' using namespace Microsoft::VisualStudio::CppUnitTestFramework; namespace PerformanceTests1 { 	TEST_CLASS(Per..."
+- File: PerformanceTests1\ProductDrawPerformanceTest.cpp
+  Preview: "#include 'pch.h' #include 'CppUnitTest.h' #include '../Entities/Product.h' #include '../../Core/Game.h' #include '../Core/Game.h' #include <chrono> us..."
+- File: UI\BudgetBar.cpp
+  Preview: "#include 'Budgetbar.h' #include '../Config/GameConfig.h' #include '../Core/Game.h' #include '../Entities/Grass.h' #include <iostream> using namespace ..."
+- File: UI\BudgetBar.h
+  Preview: "#pragma once #include <string> using namespace std; #include '../Core/Drawable.h' #include '../Entities/Animal.h' #include '../Config/GameConfig.h' #i..."
+- File: UI\Toolbar.cpp
+  Preview: "#include 'Toolbar.h' #include '../Config/GameConfig.h' #include '../Core/Game.h' #include <iostream> ToolbarIcon::ToolbarIcon(Game* r_pGame, point r_p..."
+- File: UI\Toolbar.h
+  Preview: "#pragma once #include '../Core/Drawable.h' //Base class for all toolbar icons class ToolbarIcon :public Drawable { private: 	string image_path; public..."
+- File: CMUgraphicsLib\jpeg\jconfig.h
+  Preview: "/* jconfig.wat --- jconfig.h for Watcom C/C++ on MS-DOS or OS/2. */ /* see jconfig.doc for explanations */ #include <stdlib.h> #define HAVE_PROTOTYPES..."
+- File: CMUgraphicsLib\jpeg\jdct.h
+  Preview: "/* * jdct.h * * Copyright (C) 1994-1996, Thomas G. Lane. * This file is part of the Independent JPEG Group's software. * For conditions of distributio..."
+- File: CMUgraphicsLib\jpeg\jdhuff.h
+  Preview: "/* * jdhuff.h * * Copyright (C) 1991-1996, Thomas G. Lane. * This file is part of the Independent JPEG Group's software. * For conditions of distribut..."
+- File: CMUgraphicsLib\jpeg\jerror.h
+  Preview: "/* * jerror.h * * Copyright (C) 1994-1995, Thomas G. Lane. * This file is part of the Independent JPEG Group's software. * For conditions of distribut..."
+- File: CMUgraphicsLib\jpeg\jinclude.h
+  Preview: "/* * jinclude.h * * Copyright (C) 1991-1994, Thomas G. Lane. * This file is part of the Independent JPEG Group's software. * For conditions of distrib..."
+- File: CMUgraphicsLib\jpeg\jmemsys.h
+  Preview: "/* * jmemsys.h * * Copyright (C) 1992-1996, Thomas G. Lane. * This file is part of the Independent JPEG Group's software. * For conditions of distribu..."
+- File: CMUgraphicsLib\jpeg\jmorecfg.h
+  Preview: "/* * jmorecfg.h * * Copyright (C) 1991-1996, Thomas G. Lane. * This file is part of the Independent JPEG Group's software. * For conditions of distrib..."
+- File: CMUgraphicsLib\jpeg\jpegint.h
+  Preview: "/* * jpegint.h * * Copyright (C) 1991-1996, Thomas G. Lane. * This file is part of the Independent JPEG Group's software. * For conditions of distribu..."
+- File: CMUgraphicsLib\jpeg\jpeglib.h
+  Preview: "/* * jpeglib.h * * Copyright (C) 1991-1996, Thomas G. Lane. * This file is part of the Independent JPEG Group's software. * For conditions of distribu..."
+- File: CMUgraphicsLib\jpeg\jversion.h
+  Preview: "/* * jversion.h * * Copyright (C) 1991-1996, Thomas G. Lane. * This file is part of the Independent JPEG Group's software. * For conditions of distrib..."
